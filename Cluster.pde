@@ -1,9 +1,16 @@
-public class Cluster
+public void setup()
 {
-    public final static int NUM_STEMS = 7; //number of tendrils per cluster
+  size(600, 600);  
+  background(255);
+  noLoop();
+}
 
-    public Cluster(int len, int x, int y)
-    {
-        // your code here
-    }
+public void draw()
+{
+  background(255);
+  Cluster c = new Cluster(100, 300, 300); // initial number of segments in the tendril and starting (x,y) coordinate
+}
+public void mousePressed()
+{
+  redraw();
 }
